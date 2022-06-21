@@ -1,0 +1,31 @@
+.onevs1C1,
+.onevs1C2,
+.onevs1C3,
+.onevs1C4,
+.onevs2C1,
+.onevs2C2,
+.onevs2C3,
+.onevs3C1,
+.onevs3C2,
+.onevs3C3,
+.onevs3C4 {
+  background-color: white;
+  padding: 3px;
+  border: 1px solid dimgray;
+  margin: -4px 0 0 0;
+  width: 36px;
+  height: 36px;
+}
+
+.onevs2C1,
+.onevs2C2,
+.onevs2C3 {
+  margin: 0 0 0 5px;
+}
+
+.onevs3C1,
+.onevs3C2,
+.onevs3C3,
+.onevs3C4 {
+  margin: -5px 0 0 5px;
+}

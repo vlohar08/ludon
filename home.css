@@ -1,0 +1,247 @@
+/* Global CSS */
+@font-face {
+  font-family: Candy Beans;
+  src: url(CandyBeans.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(-45deg, #ffe279, #fa7775, #6acfff, #86fe74);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  max-height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  position: relative;
+  width: 95%;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Ludon logo  */
+#ludon-logo > img {
+  width: 200px;
+  border-radius: 5px;
+  margin: 0 auto 25px;
+  box-shadow: 1px 1px 200px 1px black;
+}
+
+/* ludon introduction  */
+
+.notice-board {
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 25px 8px;
+  background-color: lightgoldenrodyellow;
+  font-weight: 500;
+}
+
+/* Ludo game types */
+
+.game-ui-btn {
+  position: relative;
+  top: -10px;
+  left: 5.5%;
+  width: 120px;
+  height: 70px;
+  border: none;
+  font-size: 18px;
+  font-family: "Candy Beans";
+  margin-bottom: 30px;
+
+  border-radius: 10px;
+  color: white;
+
+  background-image: url("./Images/stripe.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  user-select: none;
+}
+
+.game-ui-btn::before {
+  content: "";
+  position: absolute;
+  top: 3%;
+  left: 40%;
+  background-color: white;
+  width: 40%;
+  height: 4px;
+  border-radius: 5px;
+}
+
+.game-ui-btn::after {
+  content: "";
+  position: absolute;
+  top: 3%;
+  left: 82%;
+  width: 10%;
+  height: 4px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#play-online {
+  background: repeating-linear-gradient(
+    45deg,
+    #ffc800,
+    #ffc800 5px,
+    #ffc200 5px,
+    #ffc200 10px
+  );
+  box-shadow: 0 6px 0 #b76113, 0 8px 1px 1px rgba(0, 0, 0, 0.3),
+    0 10px 0 5px #75421f, 0 12px 0 5px #8a542b, 0 15px 0 5px #593116,
+    0 15px 1px 6px rgba(0, 0, 0, 0.3);
+  border-bottom: 3px solid rgba(205, 102, 0, 0.5);
+  text-shadow: 2px 2px 1px #e78700, -2px 2px 1px #e78700, 2px -2px 1px #e78700,
+    -2px -2px 1px #e78700, 0px 2px 1px #e78700, 0px -2px 1px #e78700,
+    0px 4px 1px #c96100, 2px 4px 1px #c96100, -2px 4px 1px #c96100;
+}
+
+#play-online:hover {
+  top: -8px;
+  box-shadow: 0 4px 0 #b76113, 0 6px 1px 1px rgba(0, 0, 0, 0.3),
+    0 8px 0 5px #75421f, 0 10px 0 5px #8a542b, 0 13px 0 5px #593116,
+    0 13px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pass-and-play {
+  background: repeating-linear-gradient(
+    45deg,
+    #54d440,
+    #54d440 5px,
+    #52cc3f 5px,
+    #52cc3f 10px
+  );
+  box-shadow: 0 6px 0 #348628, 0 8px 1px 1px rgba(0, 0, 0, 0.3),
+    0 10px 0 5px #2a6d20, 0 12px 0 5px #39822e, 0 15px 0 5px #1d4c16,
+    0 15px 1px 6px rgba(0, 0, 0, 0.3);
+  border-bottom: 3px solid rgba(40, 117, 29, 0.5);
+  text-shadow: 2px 2px 1px #348628, -2px 2px 1px #348628, 2px -2px 1px #348628,
+    -2px -2px 1px #348628, 0px 2px 1px #348628, 0px -2px 1px #348628,
+    0px 4px 1px #1d4c16, 2px 4px 1px #1d4c16, -2px 4px 1px #1d4c16;
+}
+
+#pass-and-play:hover {
+  top: -8px;
+  box-shadow: 0 4px 0 #348628, 0 6px 1px 1px rgba(0, 0, 0, 0.3),
+    0 8px 0 5px #2a6d20, 0 10px 0 5px #39822e, 0 13px 0 5px #1d4c16,
+    0 13px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+#play-online-with-friends,
+#share-btn {
+  background: repeating-linear-gradient(
+    45deg,
+    #ff4f4c,
+    #ff4f4c 5px,
+    #ff4643 5px,
+    #ff4643 10px
+  );
+  box-shadow: 0 6px 0 #ae2725, 0 8px 1px 1px rgba(0, 0, 0, 0.3),
+    0 10px 0 5px #831614, 0 12px 0 5px #a33634, 0 15px 0 5px #631716,
+    0 15px 1px 6px rgba(0, 0, 0, 0.3);
+  border-bottom: 3px solid rgba(160, 25, 23, 0.5);
+  text-shadow: 2px 2px 1px #d72d21, -2px 2px 1px #d72d21, 2px -2px 1px #d72d21,
+    -2px -2px 1px #d72d21, 0px 2px 1px #d72d21, 0px -2px 1px #d72d21,
+    0px 4px 1px #930704, 2px 4px 1px #930704, -2px 4px 1px #930704;
+}
+
+#play-online-with-friends:hover {
+  top: -8px;
+  box-shadow: 0 4px 0 #ae2725, 0 6px 1px 1px rgba(0, 0, 0, 0.3),
+    0 8px 0 5px #831614, 0 10px 0 5px #a33634, 0 13px 0 5px #631716,
+    0 13px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+#computer {
+  background: repeating-linear-gradient(
+    45deg,
+    #3ebbf7,
+    #3ebbf7 5px,
+    #45b1f4 5px,
+    #45b1f4 10px
+  );
+  box-shadow: 0 6px 0 #266b91, 0 8px 1px 1px rgba(0, 0, 0, 0.3),
+    0 10px 0 5px #12517d, 0 12px 0 5px #1a6b9a, 0 15px 0 5px #0c405e,
+    0 15px 1px 6px rgba(0, 0, 0, 0.3);
+  border-bottom: 3px solid rgba(16, 91, 146, 0.5);
+  text-shadow: 2px 2px 1px #0066a2, -2px 2px 1px #0066a2, 2px -2px 1px #0066a2,
+    -2px -2px 1px #0066a2, 0px 2px 1px #0066a2, 0px -2px 1px #0066a2,
+    0px 4px 1px #004a87, 2px 4px 1px #004a87, -2px 4px 1px #004a87;
+}
+
+#computer:hover {
+  top: -8px;
+  box-shadow: 0 4px 0 #266b91, 0 6px 1px 1px rgba(0, 0, 0, 0.3),
+    0 8px 0 5px #12517d, 0 10px 0 5px #1a6b9a, 0 13px 0 5px #0c405e,
+    0 13px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+#game-types {
+  max-width: 350px;
+  margin: 30px auto 0;
+}
+
+#game-types > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  transform: translateX(-5%);
+}
+
+/* Share area  */
+
+#share-area {
+  margin: 30px 0 0;
+}
+
+#share-area > p {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#share-btn {
+  position: static;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: burlywood;
+  margin: 30px auto 15px;
+  box-shadow: 0 6px 0 #ae2725, 0 7px 1px 1px rgba(0, 0, 0, 0.3),
+    0 7px 0 5px #831614, 0 9px 0 5px #a33634, 0 12px 0 5px #631716,
+    0 12px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+#share-btn::after {
+  content: "";
+  display: none;
+}
+#share-btn::before {
+  content: "";
+  display: none;
+}

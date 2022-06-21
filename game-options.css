@@ -1,0 +1,172 @@
+/* Global CSS */
+
+*,
+body {
+  box-sizing: border-box;
+  color: black;
+  text-align: center;
+  margin: auto;
+  cursor: default;
+}
+
+body {
+  background-color: azure;
+  width: 95%;
+  height: 100%;
+}
+
+hr {
+  width: 80%;
+  margin: auto;
+}
+
+.game-type {
+  margin: 20px 0 0;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+input:focus {
+  outline: none;
+}
+
+p {
+  width: 85%;
+}
+
+body img {
+  width: 25px;
+  border-radius: 5px;
+  margin: 0 20px 0 0;
+}
+/* Choose a mode */
+
+.game-type-options {
+  display: flex;
+  justify-content: center;
+  border: 2px solid #16d950;
+  border-radius: 50px;
+  margin: 30px auto;
+  width: 300px;
+  height: 45px;
+  font-size: 1.17em;
+  font-weight: bolder;
+}
+
+#onevs1,
+#onevs2,
+#onevs3 {
+  width: 33.34%;
+  height: 100%;
+  padding-top: 5px;
+}
+
+#onevs1 {
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  border-right: 1px solid black;
+}
+
+#onevs3 {
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  border-left: 1px solid black;
+}
+/* Javascript Event Class for Choose a mode */
+.imode {
+  background-color: #16d950 !important;
+  color: black;
+}
+
+/* Player names */
+
+/* 1vs1 player option  */
+
+#onevs1-player-names {
+  margin: 15px auto;
+}
+
+#onevs1-player-names > div {
+  border-radius: 5px;
+  margin: 0 auto 20px;
+  padding: 5px;
+  height: 120px;
+  width: 95%;
+  max-width: 400px;
+}
+
+#onevs1-player-names > div > div {
+  margin: 12px auto;
+}
+
+#onevs1-player-names > div > div > img:first-child {
+  width: 20px;
+  margin-top: -5px;
+}
+
+/* 1vs2 player option*/
+
+#onevs2-player-names {
+  margin: 15px auto;
+}
+
+#onevs2-player-names > h2 {
+  margin: 0 auto 16px;
+}
+
+#onevs2-player-names > div > input {
+  width: 140px;
+}
+
+#onevs2-player-names > div {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  margin: 20px auto;
+}
+
+#onevs2-player-names > div > div {
+  display: flex;
+  margin: 0;
+}
+
+#onevs2-player-names > div > div > img {
+  opacity: 0.4;
+  width: 17px;
+  height: 31.45px;
+}
+
+/* 1vs3 player option  */
+#onevs3-player-names {
+  margin: 15px auto;
+}
+
+#onevs3-player-names > div {
+  margin: 0 0 20px;
+}
+
+#onevs3-player-names > h2 {
+  margin: 0 0 30px;
+}
+
+#onevs1-player-names input,
+#onevs2-player-names input,
+#onevs3-player-names input {
+  height: 36px;
+}
+
+/* start button  */
+
+body > section > button {
+  background-color: #16d950;
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  margin: 30px 0 0 0;
+}

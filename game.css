@@ -1,0 +1,425 @@
+/* Global CSS */
+
+* , body {
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+}
+
+body {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    background-color: azure;
+}
+
+table {
+    table-layout: fixed;
+}
+
+table.path td {
+    height: 22.5px;
+    width: 22.5px;
+}
+
+/*Game Start*/
+
+body > div {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    font-size: 25px;
+    font-weight: 600;
+    z-index: 10;
+    background-color: rgb(0, 0, 0, 0.9);
+}
+body > div > p {
+    position: absolute;
+    top: 48%;
+    left: 25%;
+    right: 25%;
+    margin: auto;
+}
+
+
+/* Player area */
+
+.player-area {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    margin: auto;
+}
+
+.player-area > div {
+    display: flex;
+}
+
+.player-area > div > img {
+    height: 50px;
+    margin: 5px 0 0;
+}
+.player-area > div:first-child > img {
+    transform: rotate(180deg);
+}
+
+#player-1 {
+    background-color: #ff8e99;
+}
+
+#player-2 {
+    background-color: #7ad6ff;
+}
+
+#player-3 {
+    background-color: #fff134;
+}
+
+#player-4 {
+    background-color: #48d36c;
+}
+
+#player-1 > p {
+    margin: 0 auto 3.5px;
+    color: #2C2F4D;
+}
+
+#player-2 > p {
+    margin: 0 auto 3.5px;
+    color: #2C2F4D;
+}
+
+#player-3 > p {
+    margin: 0 auto 3.5px;
+    color: #2C2F4D;
+}
+
+#player-4 > p {
+    margin: 0 auto 3.5px;
+    color: #2C2F4D;
+}
+
+.game-row > div {
+    color: black !important;
+}
+.game-row > div table {
+    background-color: #3C3F60;
+}
+
+figcaption {
+    color: black;
+}
+/* Left side player profile */
+
+.player-area > div:first-child > div:first-child {
+    width: 61px;
+    height: 61px;
+    border-radius: 8px;
+}
+
+.player-area > div:first-child > div:nth-child(2) {
+    width: 48px;
+    height: 49px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 6px 0 0;
+    background-color: #2C2F4D;
+}
+
+/* Right side player profile */
+
+.player-area > div:nth-child(2) > div:nth-child(2) {
+    width: 48px;
+    height: 49px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    margin: 6px 0 0;
+    background-color: #2C2F4D;
+}
+
+.player-area > div:nth-child(2) > div:nth-child(3) {
+    width: 61px;
+    height: 61px;
+    border-radius: 8px;
+}
+
+/* All Players Dice */
+
+.player-dice {
+    width: 40px;
+    margin: 5px auto;
+}
+
+/* All players profile image */
+
+.player-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Ludo board */
+
+#ludo-board {
+    margin: 40px 0 20px;
+}
+
+/* Top and bottom area of ludo board */
+
+.game-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.game-row > div {
+    width: 135px;
+    height: 135px;
+    color: grey;
+    font-size: small;
+}
+#player-1 {
+    border-top-left-radius: 5px;
+    box-sizing: content-box;
+    border-bottom: 1px solid #ff8e99;
+    border-left: 1px solid #ff8e99;
+}
+#player-2 {
+    border-top-right-radius: 5px;
+    box-sizing: content-box;
+    border-bottom: 1px solid #7ad6ff;
+    border-left: 1px solid #7ad6ff;
+}
+#player-3 {
+    border-bottom-left-radius: 5px;
+    box-sizing: content-box;
+    border-top: 1px solid #fff134;
+    border-left: 1px solid #fff134;
+}
+#player-4 {
+    border-bottom-right-radius: 5px;
+    box-sizing: content-box;
+    border-top: 1px solid #48d36c;
+    border-left: 1px solid #48d36c;
+}
+
+/* Ludo horses all colors home*/
+
+.game-row > div > table img {
+    margin-top: 5px;
+    width: 13px;
+}
+
+.game-row > div > table {
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 300px 1px black;
+}
+
+.game-row > div > table tr {
+    display: inline-flex;
+}
+
+.game-row > div > table td {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    border-radius: 30px;
+    background-color: #e8e8e8;
+}
+
+/* Middle path of top and bottom area of board */
+
+.game-row > table {
+    background-color: #3C3F60;
+}
+
+/* Middle area of Ludo board */
+
+#middle-game-row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.middle-table {
+    background-color: #3C3F60;
+    border-radius: 3px;
+}
+
+/* Ludo special color path for each player */
+
+.r1, .r52, .r53, .r54, .r55, .r56 {
+    background-color: #ff8e99;
+}
+
+.b1, .b52, .b53, .b54, .b55, .b56 {
+    background-color: #7ad6ff;
+}
+
+.y1, .y52, .y53, .y54, .y55, .y56 {
+    background-color: #fff134;
+}
+
+.g1, .g52, .g53, .g54, .g55, .g56 {
+    background-color: #48d36c;
+}
+
+/* Guiding Home arrow */
+
+.r51, .b51, .y51, .g51 {
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.r51 {
+    background-image: url('Images/dir-red-arrow.png');
+}
+.b51 {
+    background-image: url('Images/dir-blue-arrow.png');
+}
+.y51 {
+    background-image: url('Images/dir-yellow-arrow.png');
+}
+.g51 {
+    background-image: url('Images/dir-green-arrow.png');
+}
+
+/* Ludo home in middle area of ludo board */
+
+#middle-game-row > div:nth-child(2) {
+    width: 68.5px;
+    height: 68.5px;
+    background-image: url('Images/ludo-home.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* Ludo path border */
+.path td {
+    border: 1px solid black;
+}
+
+/* Ludo Home image */
+
+#ludo-home {
+    width: 100%;
+}
+
+/* Horse image size inside path & home td  */
+.path td img, #win td img {
+    display: block;
+    margin: auto;
+    width: 9px;
+    height: auto;
+}
+
+/* Star safe locations on ludo board */
+
+.r9, .r22, .r35, .r48 {
+    background-image: url('Images/white-star.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* class to add gif effect on dice number 6 */
+
+.sixgif {
+    background-image: url('GIF/gif2.gif');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+/* class to add on any number */
+
+.pathgif {
+    background-image: url('GIF/gif2.gif');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+/* Player home horse  */
+
+.b57, .y57, .r57, .g57 {
+ width: 23px;
+ height: 23px;
+}
+
+#win td > img {
+    width: 9px;
+}
+
+#winners {
+    width: 90%;
+    height: 400px;
+    margin: 0 5%;
+    position: fixed;
+    top: 25%;
+    border-radius: 10px;
+    background-color:azure;
+}
+
+body > div:nth-child(2) {
+    margin: 0 auto;
+}
+
+#winners h1 {
+    font-size: 35px;
+    margin: 25px 0 0;
+    color: darkred;
+}
+
+#winners table {
+    margin: auto;
+}
+
+#winners tr {
+    display: inline-block;
+    margin: 6px 0;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
+}
+
+#winners td {
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 15px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+#winners td:first-child {
+    width: 15%;
+    margin-left: 0px;
+}
+#winners td:last-child {
+    width: 60%;
+    margin-left: 0px;
+}
+
+#winners td:nth-child(2) img {
+    width: 30px;
+    margin: 0 0 2px -10px;
+    border-radius: 5px;
+}
+
+#winners button {
+    color: black;
+    background-color: burlywood;
+    width: 20%;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+}

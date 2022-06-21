@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta information -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- title -->
+        <title>LUDON - The DON of Ludo Game is here!</title>
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="game.css">
+        <!-- favicon -->
+        <link rel="icon" href="Images/ludodon-siteicon.png">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6051453969977082"
+     crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div>
+            <p>
+            Game Starts in 3..2..1
+            </p>
+        </div>
+
+        <div style="display: none;">
+            <img style="width: 200px; margin-top: 8%;" src="Images/ludon-logo-white.png">
+            <div id="winners">
+                <h1>Congratulations!</h1>
+                <table>
+                    <tr>
+                        <td>1st</td>
+                        <td><img id="winner1-image" src="Images/player-image1.png"></td>
+                        <td id="winner1-name">Player 1</td>
+                    </tr>
+                    <tr>
+                        <td>2nd</td>
+                        <td><img id="winner2-image" src="Images/player-image2.png"></td>
+                        <td id="winner2-name">Player 2</td>
+                    </tr>
+                    <tr>
+                        <td>3rd</td>
+                        <td><img id="winner3-image" src="Images/player-image3.png"></td>
+                        <td id="winner3-name">Player 3</td>
+                    </tr>
+                    <tr>
+                        <td>4th</td>
+                        <td><img id="winner4-image" src="Images/player-image4.png"></td>
+                        <td id="winner4-name">Player 4</td>
+                    </tr>
+                </table>
+                <button type="button" onclick="location.href='http://ludon.ml'">Menu</button>
+                <button type="button" onclick="navigator.share(shareData)">Share</button>
+            </div>
+        </div>
+
+        <section>
+
+            <!-- Top player row - Displays Image, dice, & name of Player1 & Player2 -->
+            
+            <section class="player-area">
+                <div id="player1-area">
+                    <div>
+                        <figure>
+                            <img id="player1-image" class="player-image" src="Images/player-image1.png">
+                            <figcaption id="player1-name">Player 1</figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <img id="player1-dice" class="player-dice" src="">
+                    </div>
+                    <img id="player1-dice-arrow" src="">
+                </div>
+                <div id="player2-area">
+                    <img id="player2-dice-arrow" src="">
+                    <div>
+                        <img id="player2-dice" class="player-dice" src="">
+                    </div>
+                    <div>
+                        <figure>
+                            <img id="player2-image" class="player-image" src="Images/player-image2.png">
+                            <figcaption id="player2-name">Player 2</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main Ludo Board - Includes code for 4 player areas and tables that displays path -->
+
+            <section id="ludo-board">
+
+                <!-- Top area of ludo board - Player 1 & Player 2 -->
+
+                <div class="game-row" id="top-game-row">
+
+                    <!-- Player 1 area -->
+
+                    <div id="player-1">
+                        <p>Player 1</p>
+                        <table>
+                            <tr>
+                                <td id="rh1"><img class="rh1" src="Images/red-horse.png"></td>
+                                <td id="rh2"><img class="rh2" src="Images/red-horse.png"></td>
+                            </tr>
+                            <tr>
+                                <td id="rh3"><img class="rh3" src="Images/red-horse.png"></td>
+                                <td id="rh4"><img class="rh4" src="Images/red-horse.png"></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Middle path of Top area of ludo board -->
+
+                    <table class="path">
+                        <tr>
+                            <td class="r11 b50 y24 g37"></td>
+                            <td class="r12 b51 y25 g38"></td>
+                            <td class="r13 y26 g39"></td>
+                        </tr>
+                        <tr>
+                            <td class="r10 b49 y23 g36"></td>
+                            <td class="b52"></td>
+                            <td class="r14 b1 y27 g40"></td>
+                        </tr>
+                        <tr>
+                            <td class="r9 b48 y22 g35"></td>
+                            <td class="b53"></td>
+                            <td class="r15 b2 y28 g41"></td>
+                        </tr>
+                        <tr>
+                            <td class="r8 b47 y21 g34"></td>
+                            <td class="b54"></td>
+                            <td class="r16 b3 y29 g42"></td>
+                        </tr>
+                        <tr>
+                            <td class="r7 b46 y20 g33"></td>
+                            <td class="b55"></td>
+                            <td class="r17 b4 y30 g43"></td>
+                        </tr>
+                        <tr>
+                            <td class="r6 b45 y19 g32"></td>
+                            <td class="b56"></td>
+                            <td class="r18 b5 y31 g44"></td>
+                        </tr>
+                    </table>
+
+                    <!-- Player 2 area -->
+
+                    <div id="player-2">
+                        <p>Player 2</p>
+                        <table>
+                            <tr>
+                                <td id="bh1"><img class="bh1" src="Images/blue-horse.png"></td>
+                                <td id="bh2"><img class="bh2" src="Images/blue-horse.png"></td>
+                            </tr>
+                            <tr>
+                                <td id="bh3"><img class="bh3" src="Images/blue-horse.png"></td>
+                                <td id="bh4"><img class="bh4" src="Images/blue-horse.png"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Middle area of ludo board - Path and Ludo Home -->
+
+                <div id="middle-game-row">
+                    <!-- Left path in Middle area of ludo board -->
+                    <table class="middle-table path">
+                        <tr>
+                            <td class="b39 y13 g26"></td>
+                            <td class="r1 b40 y14 g27"></td>
+                            <td class="r2 b41 y15 g28"></td>
+                            <td class="r3 b42 y16 g29"></td>
+                            <td class="r4 b43 y17 g30"></td>
+                            <td class="r5 b44 y18 g31"></td>
+                        </tr>
+                        <tr>
+                            <td class="r51 b38 y12 g25"></td>
+                            <td class="r52"></td>
+                            <td class="r53"></td>
+                            <td class="r54"></td>
+                            <td class="r55"></td>
+                            <td class="r56"></td>
+                        </tr>
+                        <tr>
+                            <td class="r50 b37 y11 g24"></td>
+                            <td class="r49 b36 y10 g23"></td>
+                            <td class="r48 b35 y9 g22"></td>
+                            <td class="r47 b34 y8 g21"></td>
+                            <td class="r46 b33 y7 g20"></td>
+                            <td class="r45 b32 y6 g19"></td>
+                        </tr>
+                    </table>
+
+                    <!-- Ludo home image in center of Middle area of ludo board -->
+
+                    <div>
+                        <table id="win">
+                            <tr>
+                                <td></td>
+                                <td class="b57"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="r57"></td>
+                                <td></td>
+                                <td class="g57"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="y57"></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Right path in Middle area of ludo board -->
+
+                    <table class="middle-table path">
+                        <tr>
+                            <td class="r19 b6 y32 g45"></td>
+                            <td class="r20 b7 y33 g46"></td>
+                            <td class="r21 b8 y34 g47"></td>
+                            <td class="r22 b9 y35 g48"></td>
+                            <td class="r23 b10 y36 g49"></td>
+                            <td class="r24 b11 y37 g50"></td>
+                        </tr>
+                        <tr>
+                            <td class="g56"></td>
+                            <td class="g55"></td>
+                            <td class="g54"></td>
+                            <td class="g53"></td>
+                            <td class="g52"></td>
+                            <td class="r25 b12 y38 g51"></td>
+                        </tr>
+                        <tr>
+                            <td class="r31 b18 y44 g5"></td>
+                            <td class="r30 b17 y43 g4"></td>
+                            <td class="r29 b16 y42 g3"></td>
+                            <td class="r28 b15 y41 g2"></td>
+                            <td class="r27 b14 y40 g1"></td>
+                            <td class="r26 b13 y39"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Bottom area of ludo board - Player 3 & Player 4 -->
+
+                <div class="game-row" id="bottom-game-row">
+
+                    <!-- Player 3 area -->
+
+                    <div id="player-3">
+                        <p>Player 3</p>
+                        <table>
+                            <tr>
+                                <td id="yh1"><img class="yh1" src="Images/yellow-horse.png"></td>
+                                <td id="yh2"><img class="yh2" src="Images/yellow-horse.png"></td>
+                            </tr>
+                            <tr>
+                                <td id="yh3"><img class="yh3" src="Images/yellow-horse.png"></td>
+                                <td id="yh4"><img class="yh4" src="Images/yellow-horse.png"></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Middle path of Bottom area of ludo board -->
+
+                    <table class="path">
+                        <tr>
+                            <td class="r44 b31 y5 g18"></td>
+                            <td class="y56"></td>
+                            <td class="r32 b19 y45 g6"></td>
+                        </tr>
+                        <tr>
+                            <td class="r43 b30 y4 g17"></td>
+                            <td class="y55"></td>
+                            <td class="r33 b20 y46 g7"></td>
+                        </tr>
+                        <tr>
+                            <td class="r42 b29 y3 g16"></td>
+                            <td class="y54"></td>
+                            <td class="r34 b21 y47 g8"></td>
+                        </tr>
+                        <tr>
+                            <td class="r41 b28 y2 g15"></td>
+                            <td class="y53"></td>
+                            <td class="r35 b22 y48 g9"></td>
+                        </tr>
+                        <tr>
+                            <td class="r40 b27 y1 g14"></td>
+                            <td class="y52"></td>
+                            <td class="r36 b23 y49 g10"></td>
+                        </tr>
+                        <tr>
+                            <td class="r39 b26 g13"></td>
+                            <td class="r38 b25 y51 g12"></td>
+                            <td class="r37 b24 y50 g11"></td>
+                        </tr>
+                    </table>
+
+                    <!-- Player 4 area -->
+
+                    <div id="player-4">
+                        <p>Player 4</p>
+                        <table>
+                            <tr>
+                                <td id="gh1"><img class="gh1" src="Images/green-horse.png"></td>
+                                <td id="gh2"><img class="gh2" src="Images/green-horse.png"></td>
+                            </tr>
+                            <tr>
+                                <td id="gh3"><img class="gh3" src="Images/green-horse.png"></td>
+                                <td id="gh4"><img class="gh4" src="Images/green-horse.png"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Bottom player row - Displays Image, dice, & name of Player3 & Player4 -->
+
+            <section class="player-area">
+                <div id="player3-area">
+                    <div>
+                        <figure>
+                            <img id="player3-image" class="player-image" src="Images/player-image3.png">
+                            <figcaption id="player3-name">Player 3</figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <img id="player3-dice" class="player-dice" src="">
+                    </div>
+                    <img id="player3-dice-arrow" src="">
+                </div>
+                <div id="player4-area">
+                    <img id="player4-dice-arrow" src="">
+                    <div>
+                        <img id="player4-dice" class="player-dice" src="">
+                    </div>
+                    <div>
+                        <figure>
+                            <img id="player4-image" class="player-image" src="Images/player-image4.png">
+                            <figcaption id="player4-name">Player 4</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+        <!-- scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/d2994106c7.js" crossorigin="anonymous"></script>
+        <script>
+            //Code for using a script based on selected game-type
+            selectedGameOption = sessionStorage.getItem('game-option');
+            gameScript = document.createElement('script');
+            gameScript.src = `${selectedGameOption}.js`;
+            document.body.appendChild(gameScript);
+            
+        </script>
+        <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js'></script>
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CL3N2JGFTR"></script>
+     <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+ 
+         gtag('config', 'G-CL3N2JGFTR');
+     </script>
+    </body>
+</html>

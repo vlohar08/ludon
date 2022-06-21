@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta information -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- title -->
+        <title>LUDON - The DON of Ludo Game is here!</title>
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="game-options.css">
+        <!-- favicon -->
+        <link rel="icon" href="Images/ludodon-siteicon.png">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6051453969977082"
+     crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Main body for game start options -->
+
+        <section>
+
+            <!-- Choose a mode -->
+
+            <section class="game-type">
+                <h2>Choose a mode</h2>
+                <div class="game-type-options">
+                    <div id="onevs1" class="imode">
+                        1 vs 1
+                    </div>
+                    <div id="onevs2">
+                        1 vs 2
+                    </div>
+                    <div id="onevs3">
+                        1 vs 3
+                    </div>
+                </div>
+                <hr>
+            </section>
+            
+          <!-- Player names -->
+
+            <!-- one vs 1 player name options -->
+            <section id="onevs1-player-names">
+                <h2>Enter player names</h2>
+                <p>Select any one horse combination for your game.</p>
+                <div style="background-color: aquamarine;">
+                    <div>
+                        <img src="Images/red-horse.png">
+                        <input type="text" id="onevs1-p1-rname" value="Player 1" placeholder="Player 1 Name">
+                    </div>
+                    <div>
+                        <img src="Images/green-horse.png">
+                        <input type="text" id="onevs1-p2-gname" value="Player 2" placeholder="Player 2 Name">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="Images/blue-horse.png">
+                        <input type="text" id="onevs1-p1-bname" value="Player 1" placeholder="Player 1 Name" disabled>
+                    </div>
+                    <div>
+                        <img src="Images/yellow-horse.png">
+                        <input type="text" id="onevs1-p2-yname" value="Player 2" placeholder="Player 2 Name" disabled>
+                    </div>
+                </div>
+            </section>
+
+            <!-- one vs 2 player name options -->
+            <section id="onevs2-player-names" style="display: none;">
+                <h2>Enter player names</h2>
+                <p>Select player horse for every player</p>
+                <div>
+                    <div>
+                        <img id="onevs2r1" class="r" src="Images/red-horse.png" style="opacity: 1;">
+                        <img id="onevs2b1" class="b" src="Images/blue-horse.png">
+                        <img id="onevs2y1" class="y" src="Images/yellow-horse.png">
+                        <img id="onevs2g1" class="g" src="Images/green-horse.png">
+                    </div>
+
+                    <input type="text" id="onevs2-p1-name" value="Player 1" placeholder="Player 1 Name">
+                </div>
+                <div>
+                    <div>
+                        <img id="onevs2r2" class="r" src="Images/red-horse.png">
+                        <img id="onevs2b2" class="b" src="Images/blue-horse.png" style="opacity: 1;">
+                        <img id="onevs2y2" class="y" src="Images/yellow-horse.png">
+                        <img id="onevs2g2" class="g" src="Images/green-horse.png">
+                    </div>
+
+                    <input type="text" id="onevs2-p2-name" value="Player 2" placeholder="Player 2 Name">
+                </div>
+                <div>
+                    <div>
+                        <img id="onevs2r3" class="r" src="Images/red-horse.png">
+                        <img id="onevs2b3" class="b" src="Images/blue-horse.png">
+                        <img id="onevs2y3" class="y" src="Images/yellow-horse.png" style="opacity: 1;">
+                        <img id="onevs2g3" class="g" src="Images/green-horse.png">
+                    </div>
+
+                    <input type="text" id="onevs2-p3-name" value="Player 3" placeholder="Player 3 Name">
+                </div>
+            </section>
+
+            <!-- one vs 3 player name options -->
+            <section id="onevs3-player-names" style="display: none;">
+                <h2>Enter player names</h2>
+                <div>
+                    <img src="Images/red-horse.png">
+                    <input type="text" id="onevs3-p1-name" value="Player 1" placeholder="Player 1 Name">
+                </div>
+                <div>
+                    <img src="Images/blue-horse.png">
+                    <input type="text" id="onevs3-p2-name" value="Player 2" placeholder="Player 2 Name">
+                </div>
+                <div>
+                    <img src="Images/yellow-horse.png">
+                    <input type="text" id="onevs3-p3-name" value="Player 3" placeholder="Player 3 Name">
+                </div>
+                <div>
+                    <img src="Images/green-horse.png">
+                    <input type="text" id="onevs3-p4-name" value="Player 4" placeholder="Player 4 Name">
+                </div>
+            </section>
+
+            <!-- Start button -->
+            <button type="button">Start</button>
+        </section>
+    
+    
+        <!-- scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="game-options.js"></script>
+        <!-- <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js'></script> -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CL3N2JGFTR"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+    
+            gtag('config', 'G-CL3N2JGFTR');
+
+            sessionStorage.setItem('computer', false);
+        </script>
+    </body>
+</html>
