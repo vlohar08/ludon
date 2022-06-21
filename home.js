@@ -36,7 +36,7 @@ $("#computer").on("click", function () {
 });
 
 $("#play-online").on("click", function () {
-  location.href = "play-online.html";
+  alert("Coming Soon!");
 });
 
 $("#play-online-with-friends").on("click", function () {
